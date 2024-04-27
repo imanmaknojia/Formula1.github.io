@@ -1,0 +1,697 @@
+/* Basic Reset */
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'GoodTimesRg';
+    src: url("./goodtimes/goodtimesrg.otf") format('opentype');
+}
+body, html {
+    height: auto;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; 
+}
+
+.content {
+    width: 100%;
+    position: relative; 
+    padding-top: 0;
+}
+
+.navbar {
+    width: 100%; 
+    height: 60px;
+    font-family: 'GoodTimesRg'; 
+    background-color: rgba(18, 18, 19, 0.955); /* dark with 90% opacity */
+    font-size: 16px;
+    display: flex; /* horizontal alignment */
+    justify-content: center; /* center navbar elemets horizontally */
+    position: fixed; 
+    top: 0;
+    z-index: 1000; 
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 40px;
+}
+
+.navbar li {
+    padding: 25px;
+    padding-top:21px;
+    
+}
+
+.navbar a {
+    /* color: white; */
+    text-decoration: none;
+    display: block;
+}
+
+.navbar-logo {
+    height: 50px; 
+    margin-right: 100px; /* space between logo and menu items */
+    vertical-align: middle; /*alignment*/
+    padding-top: 8px;
+    padding-left: 5px;
+    
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white; 
+}
+
+.nav-link.active {
+    text-decoration: underline; 
+    color: rgb(255, 255, 255);
+}
+
+.bg-image {
+    background-image: url("img/home.jpeg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-text {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+     
+}
+
+.home-text h1 {
+    font-family: 'GoodTimesRg'; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    font-size: 110px; 
+    text-transform: uppercase;
+    }
+
+p {
+    font-size: 24px;
+}
+
+/*PAGE 2---------------------------------------------------------------------------------------------*/
+
+/* smooth scrolling for page */
+html {
+    scroll-behavior: smooth;
+}
+
+.bg-image-leaderboard {
+    background-image: url("img/p2.jpeg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 20px;
+}
+
+.leaderboard-text h1 {
+    
+    color: rgb(255, 255, 255);
+    font-family: 'GoodTimesRg'; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    font-size: 50px;
+    padding-top: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.info-box {
+    
+    background-color: #0b0b0fc6;
+    height: auto;
+    border-radius: 20px;
+    border-width: 10px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.race-image {
+    width: 100%; 
+    margin-left: 40px;
+    margin-right: 40px;
+    max-width: 400px;
+    height: auto;
+}
+
+.race-info {
+    text-align: center;
+    font-size: 45px;
+    color:white;
+    font-family: 'GoodTimesRg';
+    margin-right: 80px;
+    font-weight: bold;
+    flex-grow: 1;
+    line-height: 1.5;
+}
+
+.track-img {
+    width: 30%; 
+    height: 30%;
+    display: block; 
+    margin: 10px auto; 
+}
+
+#timer {
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(170, 0, 0); /* Timer color */
+}
+/*page 3----------------------------------------------------------------------------------*/
+
+#about-background {
+    background-color: rgb(139, 0, 0); 
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 20px;
+}
+
+.about-image {
+    width: 40%;  
+    height: 45%;  
+    border-style: solid;
+    border-color: rgb(23, 23, 23);
+    border-width: 13px;
+    border-radius: 20px;
+    margin-right: 20px;  
+}
+
+.header-container {
+    background-color: rgb(23, 23, 23);  
+    padding: 10px; 
+    width: fit-content; 
+    height: 75px;
+    margin-bottom: 45px;
+    border-radius: 10px;
+}
+
+
+h2 {
+    font-family: 'GoodTimesRg', sans-serif; 
+    padding-bottom: 45px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%; 
+    font-size: 23px;
+    font-family: 'GoodTimesRg', sans-serif; 
+    color: white;
+    padding: 20px; 
+    text-align: center; 
+    line-height: 1.5;
+    margin-right: 55px;
+}
+
+
+.welcome-text{
+    
+    padding-top: 20px;
+    color: rgb(17, 17, 17);    
+    text-shadow: 2px 2px 4px rgba(88, 0, 0, 0.5);
+}
+
+.rem-style {
+    font-family: 'REM', sans-serif;  
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Blinking words */
+
+.highlighted {
+    transition: color 0.5s ease;  
+    color: black;  
+}
+
+span:not(.highlighted) {
+    color: white;
+    transition: color 0.5s ease;
+}
+
+/*page 4----------------------------------------------------------------------------------*/
+
+#team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 800px;
+    background-color: rgb(18, 18, 19);
+    font-family: 'GoodTimesRg', sans-serif;
+    color: white;
+}
+
+.team-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    margin-top: 60px;
+}
+
+.team-image {
+    width: 50%; 
+    margin-right: 50px;
+    margin-left: 10px;
+    margin-top: 25px;
+    border-radius: 20px;
+    border-color: rgb(241, 241, 241);
+    border-width: 7px;
+    border-style: solid;
+}
+
+.team-info {
+    width: 50%;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.team-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px; 
+    align-items:center;  
+}
+
+.team-button {
+    background-color: rgb(137, 0, 0);
+    color: rgb(247, 247, 247);
+    border-radius: 15px;
+    border-color: rgb(254, 254, 254);
+    border-width: 1px;
+    border-style: solid;
+    font-family: 'GoodTimesRg', sans-serif;
+    padding: 10px 20px;
+    margin: 10px 10px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: content-box;
+}
+
+.team-button:hover {
+    background-color: rgb(139, 0, 0);
+    color: rgb(255, 255, 255);
+    outline: 7px;
+    outline-color: rgb(255, 255, 255);
+    outline-width: 7px;
+    outline-style: solid;
+
+}
+
+.team-display {
+    display: flex;
+    align-items: center;
+}
+
+.team-info {
+    max-width: 400px;
+}
+
+.team-name {
+    margin-bottom: 45px;
+    font-size: 36px;
+    color: rgb(139, 0, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.team-description {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+    }
+
+/* page 5--------------------------------------------------------------------------------- */
+
+.game-section {
+    background-image: url('img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'GoodTimesRg';
+}
+
+.game-wrapper {
+    text-align: center;
+    width: 960px;  
+    height: 680px;
+    background-color: rgb(139, 0, 0);
+    border: 20px solid rgb(18, 18, 19);
+    border-radius: 20px;
+    display: flex;
+    align-items: center ;
+    flex-direction: column;
+}
+
+.game-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    border-width: 10px;
+    border-color: rgb(26, 26, 26);
+    border-style: solid;
+
+}
+
+.game-box {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    color: black;  
+    width: 400px;
+    height: auto;
+    
+}
+
+.game-header{
+    margin-top: 60px;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-shadow:2px 2px 4px rgba(0, 0, 0, 1) ;
+}
+
+  .game-result, .game-random-number {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.game-instruction-detail{
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;margin-bottom: 20px;
+}
+
+.game-instruction{
+    margin-top: 10px;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.game-input{
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    align-items: center;
+}
+
+.game-submit {
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    align-items: center;
+    font-family: "GoodTimesRg";
+}
+.game-result, .game-random-number {
+    color: rgb(23, 23, 24);
+    font-weight: bold;
+    font-size: 16px;
+}
+/* page 6---------------------------------------------------------------------------------- */
+
+.contact-section {
+    background-image: url('img/p6.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Ensures background does not move with scrolling */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    color: rgb(252, 183, 55);
+}
+.header-box {
+    background-color: rgb(24, 24, 26);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 30%;
+    height: 130px;
+    text-align: center;
+    border: 4px solid #d6320d;
+}
+
+.contact-container {
+    background: rgb(24, 24, 26);
+    padding: 20px;
+    border-radius: 10px;
+    /* color: white; */
+    width: 30%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid #d6320d;
+}
+
+.contact-header {
+    font-size: 40px;
+    font-family: 'GoodTimesRg';
+    color: rgb(252, 183, 55);
+    margin-bottom: 10px;
+}
+
+
+.contact-subheader {
+    font-size: 10px;
+    margin-bottom: 20px; 
+    text-align: center;
+    font-family: 'GoodTimesRg';
+    line-height: 1.5; 
+    color: rgb(167, 215, 31);
+    width: auto; 
+    display: block;  
+}
+
+.contact-form {
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    width: 100%;  
+    /* color: white;  */
+    font-family: 'GoodTimesRg';
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.mode-label {
+    margin-top: 20px; 
+    margin-bottom: 30px; 
+    width: 100%;  
+    color: rgb(246, 246, 246); 
+    font-family: 'GoodTimesRg';
+    font-size: 16px;
+}
+
+.contact-name{
+    display: flex;
+    justify-content: start;
+    gap: 20px; 
+    width: 100%; 
+    margin-bottom: 10px;
+}
+
+.contact-mode {
+    display: flex;
+    justify-content: start;
+    gap: 20px; 
+    width: 100%; 
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-family: 'GoodTimesRg';
+    font-size: 15px;
+    width: 100%; 
+    margin-top: 20px; 
+    color: rgb(252, 183, 55);
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.contact-form input[type="radio"] {
+    margin-right: 5px; 
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="number"],
+.contact-form button {
+    width: 100%; 
+    padding: 10px;
+    margin-top: 10px; 
+    margin-bottom: 20px;
+    font-family: 'GoodTimesRg';
+}
+.contact-form textarea{
+    width: 100%; 
+    padding: 10px;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    font-family: 'GoodTimesRg';
+}
+.contact-form label[for="message"] {
+    margin-top: 20px; 
+}
+
+
+#phoneInputContainer, #emailInputContainer {
+    width: 100%; 
+    display: none; 
+}
+
+.contact-form button {
+    margin-top: 10px;
+    background-color:  #F4692E;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border-color: #242424;
+    border-width: 2px;
+    border-style: solid;
+    cursor: pointer;
+    width: 100px;
+    height: auto;
+    align-self: center;
+}
+.error-message {
+    color: white;
+    margin-left: 10px;
+    font-size: 0.8em; 
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* footer------------------------------------------------------------------------------ */
+
+.footer {
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(18, 18, 19); 
+    color: white;
+    text-align: center; 
+    font-family: 'GoodTimesRg', sans-serif; 
+    
+}
+
+.footer-content p {
+    font-size: 16px;
+}
+
+/* The toggle switch*/
+.switch {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 50px; 
+    height: 40px; 
+    margin-top: 20px; 
+    margin-right: 20px;
+  }
+  
+  /* hide default HTML checkbox */
+  .switch input {display:none;}
+
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    width: 42px;
+    height: 24px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc; /* slider background */
+    transition: .4s;
+    border-radius: 20px; 
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px; 
+    width: 16px; 
+    left: 4px;
+    bottom: 4px;
+    margin-top: 10px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #96c9f3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px  #96c9f3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(18px); 
+  }
+
+  /* .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  */
+/*dark mode*/
+
